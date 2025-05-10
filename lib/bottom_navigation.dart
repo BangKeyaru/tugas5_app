@@ -31,9 +31,11 @@ class _BottomNavigationState extends State<BottomNavigation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: _pages[_bottomNavIndex], //destination screen
+      body: _pages[_bottomNavIndex], 
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
+        child: const Icon(Icons.nightlight_round),
+        backgroundColor: Colors.yellow,
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
